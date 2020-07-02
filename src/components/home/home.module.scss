@@ -1,0 +1,15 @@
+.home-page {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-text-container {
+  width: 400px;
+}
+
+.emphasized-text {
+  font-weight: 500;
+  text-decoration: underline;
+  ::before {
+    text-decoration: none;
+  }
+}
