@@ -52,7 +52,10 @@ export const TechnologyPage = () => {
       {tech.map(data => {
         return (
           <div style={{ flex: 1, display: "flex" }}>
-            <img src={data.src} className={techStyles.techImg} />
+            <img
+              src={`https://cdn.jsdelivr.net/gh/josevelaz/portfolio@latest/src/images/tech-icons/${data.name}.svg`}
+              className={techStyles.techImg}
+            />
             <h2 style={{ color: "#000" }}>{data.name}</h2>
           </div>
         )

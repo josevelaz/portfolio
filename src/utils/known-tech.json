@@ -1,48 +1,37 @@
 [
   {
-    "name": "Javascript",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+    "name": "Javascript"
   },
   {
-    "name": "Typescript",
-    "src": "https://cdn.worldvectorlogo.com/logos/typescript.svg"
+    "name": "Typescript"
   },
   {
-    "name": "React",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+    "name": "React"
   },
   {
-    "name": "React Native",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+    "name": "React Native"
   },
   {
-    "name": "StorybookJS",
-    "src": "https://pbs.twimg.com/profile_images/1100804485616566273/sOct-Txm_400x400.png"
+    "name": "StorybookJS"
   },
   {
-    "name": "React Redux",
-    "src": "https://www.vergic.com/wpsitefiles_de3fxs/wp-content/uploads/2017/04/logo.png"
+    "name": "React Redux"
   },
   {
-    "name": "MOBX State Tree",
-    "src": "https://mobx-state-tree.js.org/img/favicon.ico"
+    "name": "MOBX State Tree"
   },
   {
-    "name": "NodeJS",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png"
+    "name": "NodeJS"
   },
-  { "name": "NestJS", "src": "https://docs.nestjs.com/assets/logo-small.svg" },
-  { "name": "ExpressJS", "src": "" },
+  { "name": "NestJS" },
+  { "name": "ExpressJS" },
   {
-    "name": "MongoDB",
-    "src": "https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png"
+    "name": "MongoDB"
   },
   {
-    "name": "HTML",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+    "name": "HTML"
   },
   {
-    "name": "CSS",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+    "name": "CSS"
   }
 ]
