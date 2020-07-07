@@ -1,0 +1,31 @@
+$gray: #d8d8d8;
+
+.card-container {
+  background-color: #eaeaea;
+  border-radius: 20px;
+  width: 40%;
+  height: 60%;
+  box-shadow: 14px 9px 35px -9px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  .card-header {
+    width: 100%;
+    background-color: $gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card-button {
+  height: 25px;
+  width: 25px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.tech-img {
+  height: auto;
+  width: auto;
+  max-height: 64px;
+  max-width: 64px;
+}

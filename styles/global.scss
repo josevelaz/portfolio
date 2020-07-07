@@ -1,5 +1,5 @@
 :root {
-  --background-color: #eeeeee;
+  --background-color: #1d1135;
 }
 
 html,
@@ -8,15 +8,61 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background-color: var(--background-color);
+  background: var(--background-color);
   font-family: "Gothic A1", sans-serif;
+  color: white;
+  overflow: hidden;
   ::-webkit-scrollbar {
     display: none;
   }
 }
+p {
+  line-height: 2rem;
+  font-size: 16px;
+}
 
-.page-container {
-  height: 100vh;
-  width: 100wh;
-  display: flex;
+.cloud {
+  position: absolute;
+  z-index: 100;
+}
+#animation-one {
+  animation: flying ease-in infinite 8s alternate;
+}
+#animation-two {
+  animation: flying-reverse ease-in-out infinite 6s alternate;
+}
+.black-hole {
+  right: 25%;
+  top: 50%;
+  position: absolute;
+  animation: spin 60s linear infinite;
+}
+
+@media screen and(max-width: 600px) {
+  .earth {
+    transform: translateY(15%);
+  }
+}
+@media screen and(max-width: 414px) {
+  .earth {
+    transform: translateY(30%);
+  }
+}
+
+@keyframes flying {
+  100% {
+    transform: translateX(random(200) + px);
+  }
+}
+@keyframes flying-reverse {
+  100% {
+    transform: translateX(random(100) - 110 + px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
