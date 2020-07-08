@@ -1,5 +1,11 @@
 [
   {
+    "name": "HTML"
+  },
+  {
+    "name": "CSS"
+  },
+  {
     "name": "Javascript"
   },
   {
@@ -27,11 +33,5 @@
   { "name": "ExpressJS" },
   {
     "name": "MongoDB"
-  },
-  {
-    "name": "HTML"
-  },
-  {
-    "name": "CSS"
   }
 ]

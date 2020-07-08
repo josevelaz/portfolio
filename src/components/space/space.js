@@ -9,22 +9,21 @@ export const Space = () => {
         params={{
           particles: {
             number: {
-              value: 60,
+              value: 80,
               density: {
                 enable: true,
                 value_area: 1500,
               },
             },
             line_linked: {
-              enable: true,
-              opacity: 0.02,
+              enable: false,
             },
             move: {
-              direction: "right",
-              speed: 0.1,
+              radius: 10,
+              speed: 0.05,
             },
             size: {
-              value: 2,
+              value: 1.5,
             },
             opacity: {
               anim: {

@@ -8,7 +8,10 @@ import CloudOne from "../images/CloudOne.svg"
 import CloudTwo from "../images/CloudTwo.svg"
 import CloudThree from "../images/CloudThree.svg"
 import AboutMe from "../components/aboutme/aboutme"
-import { TechnologyPage } from "../components/technology/technology"
+import {
+  TechnologyPage,
+  BackgorundCard,
+} from "../components/technology/technology"
 
 const IndexPage = () => {
   const parallaxRef = useRef(null)
@@ -32,55 +35,54 @@ const IndexPage = () => {
         style={{ backgroundColor: "#5643fd" }}
       />
 
-      <ParallaxLayer offset={0} speed={0.6} factor={4}>
+      <ParallaxLayer offset={0} speed={0.4} factor={4}>
         <Space />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={-0.1} factor={1}>
+      <ParallaxLayer offset={0} speed={1} factor={1}>
+        <HomePage />
+      </ParallaxLayer>
+      <ParallaxLayer offset={0.9} speed={1.5} factor={1}>
+        <AboutMe />
+      </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={1.6} factor={1}>
         <TechnologyPage />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.9} factor={1}>
-        <HomePage />
-      </ParallaxLayer>
-      <ParallaxLayer offset={0.9} speed={0.7} factor={1}>
-        <AboutMe />
-      </ParallaxLayer>
-
-      <ParallaxLayer offset={2.1} speed={1.8} style={{ opacity: 0.7 }}>
+      <ParallaxLayer offset={2.1} speed={1.8}>
         <CloudOne
           className="cloud"
           id="animation-two"
-          style={{ top: "5%", left: "15%" }}
+          style={{ opacity: 0.9, top: "5%", left: "15%" }}
         />
         <CloudTwo
           className="cloud"
           id="animation-one"
-          style={{ top: "10%", right: "15%" }}
+          style={{ opacity: 0.6, top: "10%", right: "15%" }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.4} style={{ opacity: 0.8 }}>
+      <ParallaxLayer offset={2} speed={1.4}>
         <CloudTwo
           className="cloud"
           id="animation-one"
-          style={{ top: "2%", left: "5%" }}
+          style={{ opacity: 0.8, top: "2%", left: "5%" }}
         />
         <CloudThree
           className="cloud"
           id="animation-two"
-          style={{ top: "3%", right: "30%" }}
+          style={{ opacity: 0.9, top: "3%", right: "30%" }}
         />
         <CloudOne
           className="cloud"
           id="animation-two"
-          style={{ top: "40%", right: "10%" }}
+          style={{ opacity: 0.7, top: "40%", right: "10%" }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.4} style={{ opacity: 0.8 }}>
+      <ParallaxLayer offset={2} speed={1.4}>
         <CloudThree
           className="cloud"
           id="animation-one"
-          style={{ top: "35%", left: "15%" }}
+          style={{ opacity: 0.9, top: "35%", left: "15%" }}
         />
       </ParallaxLayer>
 
