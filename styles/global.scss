@@ -17,6 +17,14 @@ body {
   }
 }
 
+.earth {
+  height: 100%;
+  width: auto;
+}
+.moon {
+  transform: translate(-50%, -50%);
+}
+
 .main {
   width: 100%;
   display: flex;
@@ -45,14 +53,45 @@ p {
   animation: spin 60s linear infinite;
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 1024px) {
   .earth {
-    transform: translateY(15%);
+    height: 60%;
+  }
+  .moon {
+    transform: translate(-50%, 70%);
   }
 }
-@media screen and(max-width: 414px) {
+
+@media screen and(max-width: 900px) {
   .earth {
-    transform: translateY(30%);
+    height: 70%;
+  }
+  .moon {
+    height: 20%;
+    width: auto;
+    transform: translate(-50%, 10%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .earth {
+    height: 60%;
+  }
+  .moon {
+    height: 20%;
+    width: auto;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .earth {
+    height: 45%;
+  }
+  .moon {
+    height: 15%;
+    width: auto;
+    transform: translate(-40%, 150%);
   }
 }
 

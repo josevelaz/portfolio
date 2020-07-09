@@ -3,6 +3,7 @@ import HomePage from "../components/home/home"
 import { Space } from "../components/space/space"
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
 import Earth from "../images/Earth.svg"
+import Moon from "../images/Moon.svg"
 import BlackHole from "../images/BlackHole.svg"
 import CloudOne from "../images/CloudOne.svg"
 import CloudTwo from "../images/CloudTwo.svg"
@@ -90,6 +91,17 @@ const IndexPage = () => {
       </ParallaxLayer>
 
       <ParallaxLayer
+        offset={2.4}
+        speed={2.5}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-start",
+        }}
+      >
+        <Moon className="moon" />
+      </ParallaxLayer>
+      <ParallaxLayer
         offset={2}
         speed={2}
         style={{
@@ -98,7 +110,7 @@ const IndexPage = () => {
           alignItems: "flex-end",
         }}
       >
-        <Earth height={"90%"} width={"90%"} className="earth" />
+        <Earth className="earth" />
       </ParallaxLayer>
     </Parallax>
   )
