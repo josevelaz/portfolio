@@ -8,10 +8,8 @@ import CloudOne from "../images/CloudOne.svg"
 import CloudTwo from "../images/CloudTwo.svg"
 import CloudThree from "../images/CloudThree.svg"
 import AboutMe from "../components/aboutme/aboutme"
-import {
-  TechnologyPage,
-  BackgorundCard,
-} from "../components/technology/technology"
+import { TechnologyPage } from "../components/technology/technology"
+import { Project } from "../components/projects/projects"
 
 const IndexPage = () => {
   const parallaxRef = useRef(null)
@@ -45,10 +43,15 @@ const IndexPage = () => {
       <ParallaxLayer offset={0.9} speed={1.5} factor={1}>
         <AboutMe />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={1.6} factor={1}>
+      <ParallaxLayer offset={1} speed={2} factor={1}>
         <TechnologyPage />
       </ParallaxLayer>
 
+      <ParallaxLayer offset={1.9} speed={1.3} factor={1}>
+        <Project />
+      </ParallaxLayer>
+
+      {/* Clouds */}
       <ParallaxLayer offset={2.1} speed={1.8}>
         <CloudOne
           className="cloud"

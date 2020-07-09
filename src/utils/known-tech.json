@@ -29,9 +29,16 @@
   {
     "name": "NodeJS"
   },
-  { "name": "NestJS" },
-  { "name": "ExpressJS" },
+  {
+    "name": "NestJS"
+  },
+  {
+    "name": "ExpressJS"
+  },
   {
     "name": "MongoDB"
+  },
+  {
+    "name": "xCode / iOS"
   }
 ]
