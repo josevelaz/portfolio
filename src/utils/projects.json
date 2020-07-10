@@ -1,0 +1,16 @@
+[
+  {
+    "id": "svg-component-library-creator",
+    "name": "svg-component-library-creator",
+    "Tools_Used": "GlueGun, NodeJS, SVGR",
+    "Description": "NodeJS CLI powered by Gluegun used to convert SVG files into a reusable, Type-safe React (and React Native) component",
+    "Links": ["https://github.com/josevelaz/svg-component-library-creator"]
+  },
+  {
+    "id": "flairr",
+    "name": "Flairr (Company Project)",
+    "Tools_Used": "React Native, React Redux, NodeJS, ExpressJS",
+    "Description": "React Native dating application that allows users to play AR(Augmented Reality) in order to win in-game currency, while allowing the users to make it easier to connect with each other",
+    "Links": ["https://apps.apple.com/us/app/flairr/id1494223515"]
+  }
+]

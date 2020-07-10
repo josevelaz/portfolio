@@ -26,7 +26,10 @@
     "react-particles-js": "^3.2.1",
     "react-scroll": "^1.7.16",
     "react-spring": "^8.0.27",
-    "typeface-gothic-a1": "0.0.61"
+    "react-typewriting-effect": "^1.0.3",
+    "react-typing-effect": "^2.0.3",
+    "typeface-gothic-a1": "0.0.61",
+    "typeface-ibm-plex-mono": "0.0.61"
   },
   "devDependencies": {
     "prettier": "2.0.5",

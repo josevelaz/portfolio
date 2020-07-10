@@ -8,6 +8,7 @@ import BlackHole from "../images/BlackHole.svg"
 import CloudOne from "../images/CloudOne.svg"
 import CloudTwo from "../images/CloudTwo.svg"
 import CloudThree from "../images/CloudThree.svg"
+import Ship from "../images/Ship.svg"
 import AboutMe from "../components/aboutme/aboutme"
 import { TechnologyPage } from "../components/technology/technology"
 import { Project } from "../components/projects/projects"
@@ -43,6 +44,9 @@ const IndexPage = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0.9} speed={1.5} factor={1}>
         <AboutMe />
+      </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={3} factor={2}>
+        <Ship style={{ marginLeft: "10vw" }} />
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={2} factor={1}>
         <TechnologyPage />

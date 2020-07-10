@@ -2,7 +2,11 @@ import React from "react"
 import cardStyles from "./Card.module.scss"
 
 const Card = props => (
-  <div className={cardStyles.cardContainer} style={props.containerStyle}>
+  <div
+    className={cardStyles.cardContainer}
+    style={props.containerStyle}
+    {...props}
+  >
     <div className={cardStyles.cardTopBar} style={props.topBarStyle}>
       <div
         className={cardStyles.cardButton}

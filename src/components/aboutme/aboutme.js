@@ -14,9 +14,8 @@ const AboutMe = () => {
           React Native and NodeJS/ExpressJS. While focused on Front-End
           development and UI/UX design, I am fully capable of creating,
           managing, and modifying an ExpressJS server with a MongoDB database.
-          My hunger for cleaner code and better design allowed me to be able to
-          vastly improve performance and create a much more pleasent UX at my
-          previous place of employment.
+          My hunger for cleaner code and better design allows me to be able to
+          vastly improve performance and create a much more pleasent UX.
         </p>
       </div>
     </div>

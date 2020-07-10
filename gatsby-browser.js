@@ -7,4 +7,5 @@
 // You can delete this file if you're not using it
 
 import "typeface-gothic-a1"
+import "typeface-ibm-plex-mono"
 import "./styles/global.scss"
