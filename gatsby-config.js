@@ -1,10 +1,9 @@
 module.exports = {
-  pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Jose Velazquez - Software Developer`,
     description: ``,
     author: `@josevelaz`,
-    siteUrl: `josevelazquez.me`,
+    siteUrl: `http://josevelazquez.me`,
   },
   plugins: [
     `gatsby-plugin-emotion`,

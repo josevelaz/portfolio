@@ -161,6 +161,13 @@ const Label = styled.p`
   margin-left: 1rem;
   pointer-events: none;
   transition: all 150ms ease-in;
+
+  @media screen and(600px) {
+    font-size: ${props => (props.focused || props.value ? "18px" : "14px")};
+    transform: translateY(
+      ${props => (props.focused || props.value ? "-50px" : "-15px")}
+    );
+  }
 `
 
 const Button = styled.button`

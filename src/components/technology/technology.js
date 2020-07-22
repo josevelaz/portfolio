@@ -3,6 +3,7 @@ import techStyles from "./technology.module.scss"
 import tech from "../../utils/known-tech.json"
 import Card from "../Card/Card"
 import Media from "react-media"
+import SVG from "react-inlinesvg"
 
 export const TechnologyPage = () => {
   return (
@@ -25,11 +26,13 @@ export const TechnologyPage = () => {
               {tech.map(data => {
                 return (
                   <div className={techStyles.container}>
-                    <img
+                    <SVG
+                      cacheRequests={true}
                       src={`https://cdn.jsdelivr.net/gh/josevelaz/portfolio@latest/src/images/tech-icons/${
                         data.name === "xCode / iOS" ? "Apple" : data.name
                       }.svg`}
                       className={techStyles.techImg}
+                      alt="📵"
                     />
                     <h2 style={{ color: "#000" }}>{data.name}</h2>
                   </div>
