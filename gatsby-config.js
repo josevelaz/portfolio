@@ -4,10 +4,12 @@ module.exports = {
     title: `Jose Velazquez - Software Developer`,
     description: ``,
     author: `@josevelaz`,
+    siteUrl: `josevelazquez.me`,
   },
   plugins: [
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-cname`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
