@@ -4,6 +4,7 @@ import * as yup from "yup"
 import contactStyles from "./contactme.module.scss"
 import styled from "@emotion/styled"
 import HashLoader from "react-spinners/HashLoader"
+import Sign from "../../images/sign.svg"
 
 const ContactMe = () => {
   const [formStatus, setFormStatus] = useState("")
@@ -65,7 +66,29 @@ const ContactMe = () => {
     <div className={contactStyles.container}>
       <div className={contactStyles.card}>
         <h1 className={contactStyles.header}>Lets get in touch!</h1>
-        <FormContainer>
+        <Header>
+          Email :{" "}
+          <a href="mailto:jose.carlos.velazquez@hotmail.com">
+            <Span>jose.carlos.velazquez@hotmail.com</Span>
+          </a>
+        </Header>
+        <Header>
+          Phone Number:{" "}
+          <a href="tel:+13213708576">
+            <Span>+1 (321)-370-8576</Span>
+          </a>
+        </Header>
+        <Header>
+          Resume:{" "}
+          <a
+            href="https://www.dropbox.com/s/exo96acgaqkyn4v/RESUME.pdf?dl=0"
+            target="_blank"
+          >
+            <Sign height="32px" width="32px" />
+          </a>
+        </Header>
+
+        {/* <FormContainer>
           <Input
             label="Email"
             value={formik.values.email}
@@ -105,7 +128,7 @@ const ContactMe = () => {
               "Submit"
             )}
           </Button>
-        </FormContainer>
+        </FormContainer> */}
       </div>
     </div>
   )
@@ -143,6 +166,18 @@ const Input = props => {
     </div>
   )
 }
+
+const Header = styled.p`
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+`
+
+const Span = styled.span`
+  font-szie: 20px;
+  color: #0000ee;
+  text-decoration: underline;
+`
 
 const FormContainer = styled.div`
   height: 80%;
