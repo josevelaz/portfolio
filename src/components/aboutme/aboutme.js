@@ -7,7 +7,7 @@ const AboutMe = () => {
       <div className={aboutmeStyle.container}>
         <h2>About Me</h2>
         <svg height="30" viewBox="0 0 200 30" transform="translate(0,-25)">
-          <line y1="15" x2="100%" y2="15" stroke="white" stroke-width="5" />
+          <line y1="15" x2="100%" y2="15" stroke="white" strokeWidth="5" />
         </svg>
         <p>
           I am a 20 year old Full-Stack dveloper with experience in ReactJS,

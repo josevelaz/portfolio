@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import HomePage from "../components/home/home"
 import { Space } from "../components/space/space"
+import { interpolate } from "react-spring"
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
 import Earth from "../images/Earth.svg"
 import Moon from "../images/Moon.svg"
@@ -12,9 +13,12 @@ import Ship from "../images/Ship.svg"
 import AboutMe from "../components/aboutme/aboutme"
 import { TechnologyPage } from "../components/technology/technology"
 import { Project } from "../components/projects/projects"
+import ContactMe from "../components/contactme/contactme"
 
 const IndexPage = () => {
   const parallaxRef = useRef(null)
+
+  useEffect(() => {}, [])
   return (
     <Parallax pages={3} ref={parallaxRef}>
       <ParallaxLayer
@@ -46,7 +50,7 @@ const IndexPage = () => {
         <AboutMe />
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={3} factor={2}>
-        <Ship style={{ marginLeft: "10vw" }} />
+        <Ship style={{ transform: "translate(50%, -200%)" }} />
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={2} factor={1}>
         <TechnologyPage />
@@ -115,6 +119,18 @@ const IndexPage = () => {
         }}
       >
         <Earth className="earth" />
+      </ParallaxLayer>
+
+      <ParallaxLayer
+        offset={2}
+        speed={2}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-end",
+        }}
+      >
+        <ContactMe />
       </ParallaxLayer>
     </Parallax>
   )

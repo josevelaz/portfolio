@@ -58,11 +58,6 @@ export const Project = props => {
                         key={project["id"]}
                         className={projectStyles.terminalResponse}
                         onClick={() => {
-                          setTyping({
-                            ...typing,
-                            project: "",
-                            projectCommand: false,
-                          })
                           setTyping({ ...typing, project: project["id"] })
                         }}
                         style={{
