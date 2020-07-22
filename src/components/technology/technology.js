@@ -18,6 +18,9 @@ export const TechnologyPage = () => {
             <Card
               header="Known Techologies"
               containerStyle={{ marginLeft: margin }}
+              innerContainerStyle={{
+                flexWrap: "wrap",
+              }}
             >
               {tech.map(data => {
                 return (

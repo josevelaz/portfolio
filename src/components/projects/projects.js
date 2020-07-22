@@ -25,7 +25,10 @@ export const Project = props => {
           return (
             <Card
               containerStyle={{ marginRight: margin }}
-              innerContainerStyle={{ flexDirection: "column" }}
+              innerContainerStyle={{
+                flexDirection: "column",
+                wordWrap: "break-word",
+              }}
               onClick={() =>
                 !typing.initial && setTyping({ ...typing, initial: true })
               }

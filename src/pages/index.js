@@ -15,53 +15,63 @@ import { TechnologyPage } from "../components/technology/technology"
 import { Project } from "../components/projects/projects"
 import ContactMe from "../components/contactme/contactme"
 
-const IndexPage = () => {
-  const parallaxRef = useRef(null)
+const CONTACT_OFFSET = 3
 
+const IndexPage = () => {
   useEffect(() => {}, [])
   return (
-    <Parallax pages={3} ref={parallaxRef}>
+    <Parallax pages={4}>
+      {/* Middle Backgroun */}
       <ParallaxLayer
-        factor={2}
         offset={1}
-        speed={1}
+        factor={1.5}
         style={{ backgroundColor: "#0c164f" }}
       />
 
+      {/* Earth BG */}
+      <ParallaxLayer
+        offset={2.5}
+        factor={1.5}
+        style={{ backgroundColor: "#5643fd" }}
+      />
+
+      {/* Black Hole */}
       <ParallaxLayer offset={0} speed={0.3}>
         <BlackHole className="black-hole" height={"15%"} width={"15%"} />
       </ParallaxLayer>
 
-      <ParallaxLayer
-        offset={2}
-        speed={1}
-        factor={1}
-        style={{ backgroundColor: "#5643fd" }}
-      />
-
-      <ParallaxLayer offset={0} speed={0.4} factor={4}>
+      {/* Stars */}
+      <ParallaxLayer offset={0} factor={4} speed={0.1}>
         <Space />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={1} factor={1}>
+      {/* Home Page */}
+      <ParallaxLayer offset={0} speed={0.5} factor={1}>
         <HomePage />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.9} speed={1.5} factor={1}>
+
+      {/* About Me */}
+      <ParallaxLayer offset={0.5} speed={0.7} factor={1}>
         <AboutMe />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={3} factor={2}>
+
+      {/* Flying Starship */}
+      <ParallaxLayer offset={1} speed={1.1} factor={2}>
         <Ship style={{ transform: "translate(50%, -200%)" }} />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={2} factor={1}>
+
+      {/* Known teck */}
+      <ParallaxLayer offset={1} speed={0.5} factor={1}>
         <TechnologyPage />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.9} speed={1.3} factor={1}>
+      {/* Projects */}
+      <ParallaxLayer offset={2} speed={0.3} factor={1}>
         <Project />
       </ParallaxLayer>
 
       {/* Clouds */}
-      <ParallaxLayer offset={2.1} speed={1.8}>
+      <ParallaxLayer offset={3} speed={0.8}>
         <CloudOne
           className="cloud"
           id="animation-two"
@@ -73,7 +83,7 @@ const IndexPage = () => {
           style={{ opacity: 0.6, top: "10%", right: "15%" }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.4}>
+      <ParallaxLayer offset={2.9} speed={0.4}>
         <CloudTwo
           className="cloud"
           id="animation-one"
@@ -90,7 +100,7 @@ const IndexPage = () => {
           style={{ opacity: 0.7, top: "40%", right: "10%" }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1.4}>
+      <ParallaxLayer offset={2.8} speed={0.4}>
         <CloudThree
           className="cloud"
           id="animation-one"
@@ -98,9 +108,10 @@ const IndexPage = () => {
         />
       </ParallaxLayer>
 
+      {/* Moon */}
       <ParallaxLayer
-        offset={2.4}
-        speed={2.5}
+        offset={3.5}
+        speed={0.1}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -109,9 +120,11 @@ const IndexPage = () => {
       >
         <Moon className="moon" />
       </ParallaxLayer>
+
+      {/* Earth */}
       <ParallaxLayer
-        offset={2}
-        speed={2}
+        offset={CONTACT_OFFSET}
+        speed={0.4}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -121,9 +134,10 @@ const IndexPage = () => {
         <Earth className="earth" />
       </ParallaxLayer>
 
+      {/* Contact Form */}
       <ParallaxLayer
-        offset={2}
-        speed={2}
+        offset={CONTACT_OFFSET}
+        speed={0.5}
         style={{
           display: "flex",
           justifyContent: "center",
