@@ -4,7 +4,6 @@ import * as yup from "yup"
 import contactStyles from "./contactme.module.scss"
 import styled from "@emotion/styled"
 import HashLoader from "react-spinners/HashLoader"
-import useFetch from "../../utils/hooks/useFetch"
 
 const ContactMe = () => {
   const [formStatus, setFormStatus] = useState("")
